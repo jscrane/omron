@@ -93,6 +93,7 @@ int main(int argc, char *argv[])
 	if (verbose)
 		printf("End: %s\n", buf);
 		
+	ret = 0;
 close:
 	r = omron_close(dev);
 	if (r < 0)
