@@ -10,6 +10,7 @@ omron: omron.o
 
 install: omron
 	install -m0755 omron /usr/local/bin
+	install -m0644 69-libomron.rules /etc/udev/rules.d
 
 clean:
 	rm -f omron omron.o
